@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Pembeli | AlamGlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background-color: #e8f5e9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2e7d32;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #2e7d32;
+    }
+
+    .review-section {
+      padding: 60px;
+      text-align: center;
+    }
+
+    .review-section h1 {
+      color: #2e7d32;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .review-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      padding: 25px;
+      transition: 0.3s ease;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .review-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    .review-card h3 {
+      font-size: 1.1rem;
+      color: #2e7d32;
+      margin-bottom: 8px;
+    }
+
+    .stars {
+      color: #fbc02d;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+
+    .review-card p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #e8f5e9;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      color: #444;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #2e7d32;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🌿 AlamGlow</div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a href="review.html">Review</a>
+      <a href="populer.html">Populer</a>
+      <a href="info.html">Info Terbaru</a>
+    </nav>
+  </header>
+
+  <section class="review-section">
+    <h1>Review Pembeli Kami</h1>
+    <div class="review-grid">
+
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Pembeli 1">
+        <h3>Rani Setiawan</h3>
+        <div class="stars">★★★★★</div>
+        <p>Setelah dua minggu pakai Masker Madu AlamGlow, kulitku jadi lebih lembut dan cerah. Wanginya juga alami banget!</p>
+      </div>
+
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Pembeli 2">
+        <h3>Putri Amelia</h3>
+        <div class="stars">★★★★★</div>
+        <p>Sabun Lidah Buayanya lembut banget di kulit, gak bikin kering. Aku suka banget konsep naturalnya 🌸</p>
+      </div>
+
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Pembeli 3">
+        <h3>Rico Pratama</h3>
+        <div class="stars">★★★★☆</div>
+        <p>Serum Vitamin C-nya ringan dan cepat menyerap. Pori-pori kelihatan lebih kecil dan kulit lebih segar!</p>
+      </div>
+
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Pembeli 4">
+        <h3>Linda Oktaviani</h3>
+        <div class="stars">★★★★★</div>
+        <p>Toner Rosewater-nya segar banget, bikin wajahku calming setelah cuci muka. Recommended banget!</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>Ikuti kami di 
+      <a href="#">Instagram</a> | 
+      <a href="#">Shopee</a> | 
+      <a href="#">Tokopedia</a>
+    </p>
+    <p>© 2025 AlamGlow - All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

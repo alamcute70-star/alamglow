@@ -1,0 +1,56 @@
+<!-- navbar.html -->
+<header>
+  <div class="logo">🌿 AlamGlow</div>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="produk.html">Produk</a>
+    <a href="review.html">Review</a>
+    <a href="populer.html">Populer</a>
+    <a href="info.html">Info Terbaru</a>
+    <a href="cart.html" class="cart-btn">🛒 Keranjang</a>
+  </nav>
+</header>
+
+<style>
+  header {
+    background-color: #e8f5e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2e7d32;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #2e7d32;
+  }
+
+  /* Gaya khusus untuk tombol keranjang */
+  .cart-btn {
+    background-color: #66bb6a;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 25px;
+  }
+
+  .cart-btn:hover {
+    background-color: #388e3c;
+  }
+</style>
