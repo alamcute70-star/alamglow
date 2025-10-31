@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Terbaru | AlamGlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background-color: #e8f5e9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2e7d32;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #2e7d32;
+    }
+
+    .container {
+      padding: 60px;
+      text-align: center;
+    }
+
+    .container h1 {
+      color: #2e7d32;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+    }
+
+    .info-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: 0.3s ease;
+      text-align: left;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .info-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .info-content {
+      padding: 20px;
+    }
+
+    .info-content h3 {
+      color: #2e7d32;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .info-content .date {
+      font-size: 0.8rem;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .info-content p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #66bb6a;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #388e3c;
+    }
+
+    footer {
+      background-color: #e8f5e9;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      color: #444;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #2e7d32;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🌿 AlamGlow</div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a href="review.html">Review</a>
+      <a href="populer.html">Populer</a>
+      <a href="info.html">Info Terbaru</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Info & Artikel Terbaru</h1>
+    <div class="info-grid">
+
+      <div class="info-card">
+        <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=800&q=80" alt="Artikel 1">
+        <div class="info-content">
+          <h3>5 Manfaat Skincare Alami untuk Kulit Sehat</h3>
+          <div class="date">30 Oktober 2025</div>
+          <p>Skincare berbahan alami tak hanya aman, tapi juga membantu menjaga keseimbangan kulit tanpa efek samping kimia.</p>
+         <a href="artikel1.html" class="btn">Baca Selengkapnya</a>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <img src="https://images.unsplash.com/photo-1612817159949-195b6d5e4f1c?auto=format&fit=crop&w=800&q=80" alt="Artikel 2">
+        <div class="info-content">
+          <h3>Peluncuran Produk Baru: AlamGlow Bright Serum</h3>
+          <div class="date">25 Oktober 2025</div>
+          <p>AlamGlow menghadirkan serum terbaru yang diformulasikan khusus dengan Vitamin C alami dari ekstrak buah-buahan tropis.</p>
+          <a href="artikel2.html" class="btn">Baca Selengkapnya</a>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <img src="https://images.unsplash.com/photo-1573497019958-9a8994a090b7?auto=format&fit=crop&w=800&q=80" alt="Artikel 3">
+        <div class="info-content">
+          <h3>Tips Merawat Kulit Sensitif Secara Alami</h3>
+          <div class="date">18 Oktober 2025</div>
+          <p>Gunakan bahan lembut seperti aloe vera, madu, dan rosewater untuk menjaga kulit sensitif tetap tenang dan sehat.</p>
+          <a href="#" class="btn" onclick="alert('Fitur baca selengkapnya belum aktif 😊')">Baca Selengkapnya</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>Ikuti kami di 
+      <a href="#">Instagram</a> | 
+      <a href="#">Shopee</a> | 
+      <a href="#">Tokopedia</a>
+    </p>
+    <p>© 2025 AlamGlow - All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

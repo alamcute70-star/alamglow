@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk Populer | AlamGlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background-color: #e8f5e9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2e7d32;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #2e7d32;
+    }
+
+    .container {
+      padding: 60px;
+      text-align: center;
+    }
+
+    .container h1 {
+      color: #2e7d32;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    .popular-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 35px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      padding: 20px;
+      position: relative;
+      transition: 0.3s;
+      overflow: hidden;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      transition: 0.3s;
+    }
+
+    .label {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-color: #43a047;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .product-card h3 {
+      font-size: 1.2rem;
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-weight: 600;
+      color: #43a047;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background-color: #66bb6a;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #388e3c;
+    }
+
+    footer {
+      background-color: #e8f5e9;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      color: #444;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #2e7d32;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🌿 AlamGlow</div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a href="review.html">Review</a>
+      <a href="populer.html">Populer</a>
+      <a href="info.html">Info Terbaru</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Produk Terpopuler AlamGlow</h1>
+    <div class="popular-grid">
+
+      <div class="product-card">
+        <span class="label">Best Seller</span>
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80" alt="Masker Madu">
+        <h3>Masker Madu Organik</h3>
+        <p>Masker alami yang menutrisi dan melembutkan kulit wajahmu secara alami.</p>
+        <div class="price">Rp 89.000</div>
+        <button class="btn" onclick="alert('Produk ditambahkan ke keranjang!')">Beli Sekarang</button>
+      </div>
+
+      <div class="product-card">
+        <span class="label">Top Rated</span>
+        <img src="https://images.unsplash.com/photo-1611930022073-b7d3b0aa0f63?auto=format&fit=crop&w=800&q=80" alt="Serum Vitamin C">
+        <h3>Serum Vitamin C</h3>
+        <p>Mencerahkan wajah dan melindungi kulit dari paparan radikal bebas.</p>
+        <div class="price">Rp 129.000</div>
+        <button class="btn" onclick="alert('Produk ditambahkan ke keranjang!')">Beli Sekarang</button>
+      </div>
+
+      <div class="product-card">
+        <span class="label">Trending</span>
+        <img src="https://images.unsplash.com/photo-1610450949065-1e6c8e2c56b1?auto=format&fit=crop&w=800&q=80" alt="Sabun Lidah Buaya">
+        <h3>Sabun Lidah Buaya</h3>
+        <p>Membersihkan kulit dengan lembut sekaligus menjaga kelembapan alami kulit.</p>
+        <div class="price">Rp 49.000</div>
+        <button class="btn" onclick="alert('Produk ditambahkan ke keranjang!')">Beli Sekarang</button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>Ikuti kami di 
+      <a href="#">Instagram</a> | 
+      <a href="#">Shopee</a> | 
+      <a href="#">Tokopedia</a>
+    </p>
+    <p>© 2025 AlamGlow - All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
