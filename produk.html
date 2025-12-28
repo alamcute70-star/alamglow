@@ -3,201 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Basic SEO -->
   <title>Produk AlamGlow | Skincare Alami</title>
+  <meta name="description" content="Produk skincare alami AlamGlow berbahan herbal Indonesia. Masker madu, sabun lidah buaya, toner rosewater, dan serum vitamin C.">
+  <meta name="keywords" content="produk skincare alami, masker madu, sabun lidah buaya, toner rosewater, serum vitamin C, AlamGlow">
+  <meta name="author" content="AlamGlow">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="id">
+  <meta name="theme-color" content="#66bb6a">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Produk AlamGlow | Skincare Alami">
+  <meta property="og:description" content="Temukan rangkaian produk skincare alami AlamGlow berbahan herbal Indonesia.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.alamglow.com/produk.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522337660859-02fbefca4702">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Produk AlamGlow | Skincare Alami">
+  <meta name="twitter:description" content="Rangkaian skincare alami AlamGlow untuk kulit sehat dan bercahaya.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1522337660859-02fbefca4702">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+    * {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    body{background:#fafafa;color:#333;}
+    header{
+      background:#e8f5e9;display:flex;justify-content:space-between;
+      align-items:center;padding:20px 60px;box-shadow:0 2px 10px rgba(0,0,0,0.05);
+      position:sticky;top:0;z-index:100;flex-wrap:wrap;
     }
-
-    body {
-      background-color: #fafafa;
-      color: #333;
+    .logo{font-size:1.5rem;font-weight:600;color:#2e7d32;}
+    nav a{text-decoration:none;color:#333;margin:0 15px;font-weight:500;transition:.3s;position:relative;}
+    nav a:hover{color:#2e7d32;}
+    .cart-badge{
+      background:#ef5350;color:white;font-size:0.7rem;font-weight:600;
+      border-radius:50%;padding:2px 6px;position:absolute;top:-6px;right:-10px;
     }
-
-    header {
-      background-color: #e8f5e9;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 60px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #2e7d32;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      margin: 0 15px;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #2e7d32;
-    }
-
-    .container {
-      padding: 60px;
-      text-align: center;
-    }
-
-    .container h1 {
-      color: #2e7d32;
-      margin-bottom: 40px;
-      font-size: 2rem;
-    }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .product-card {
-      background-color: #fff;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      padding: 20px;
-      transition: 0.3s ease;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-
-    .product-card h3 {
-      color: #2e7d32;
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-
-    .product-card p {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 10px;
-    }
-
-    .price {
-      font-weight: 600;
-      color: #43a047;
-      margin-bottom: 15px;
-    }
-
-    .btn {
-      background-color: #66bb6a;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #388e3c;
-    }
-
-    footer {
-      background-color: #e8f5e9;
-      text-align: center;
-      padding: 20px;
-      margin-top: 60px;
-      color: #444;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: #2e7d32;
-      text-decoration: none;
-      margin: 0 8px;
-      font-weight: 500;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
+    .container{padding:60px;text-align:center;}
+    .container h1{color:#2e7d32;margin-bottom:40px;font-size:2rem;}
+    .product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+    .product-card{background:#fff;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.05);padding:20px;transition:.3s;}
+    .product-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.1);}
+    .product-card img{width:100%;border-radius:10px;margin-bottom:15px;}
+    .product-card h3{color:#2e7d32;font-size:1.2rem;margin-bottom:10px;}
+    .price{font-weight:600;color:#43a047;margin-bottom:15px;}
+    .btn{background:#66bb6a;color:white;border:none;padding:10px 20px;border-radius:30px;cursor:pointer;transition:.3s;}
+    .btn:hover{background:#388e3c;}
+    footer{background:#e8f5e9;text-align:center;padding:20px;margin-top:60px;color:#444;font-size:.9rem;}
   </style>
 </head>
+
 <body>
 
-  <header>
-    <div class="logo">🌿 AlamGlow</div>
-    <nav>
-      <a href="index.html">Beranda</a>
-      <a href="produk.html">Produk</a>
-      <a href="review.html">Review</a>
-      <a href="populer.html">Populer</a>
-      <a href="info.html">Info Terbaru</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo">🌿 AlamGlow</div>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="produk.html">Produk</a>
+    <a href="review.html">Review</a>
+    <a href="populer.html">Populer</a>
+    <a href="info.html">Info Terbaru</a>
+    <a href="cart.html" id="cart-link">🛒 Keranjang <span id="cart-count" class="cart-badge">0</span></a>
+  </nav>
+</header>
 
-  <div class="container">
-    <h1>Produk Skincare Alami Kami</h1>
-    <div class="product-grid">
+<div class="container">
+  <h1>Produk Skincare Alami Kami</h1>
+  <div class="product-grid">
 
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80" alt="Masker Madu">
-        <h3>Masker Madu Organik</h3>
-        <p>Menutrisi dan melembapkan kulit wajah secara alami.</p>
-        <div class="price">Rp 89.000</div>
-        <button class="btn" onclick="alert('Produk ditambahkan ke keranjang!')">Tambah ke Keranjang</button>
-      </div>
-
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1610450949065-1e6c8e2c56b1?auto=format&fit=crop&w=800&q=80" alt="Sabun Lidah Buaya">
-        <h3>Sabun Lidah Buaya</h3>
-        <p>Membersihkan kulit sekaligus menjaga kelembapan alami.</p>
-        <div class="price">Rp 49.000</div>
-        <button class="btn" onclick="alert('Produk ditambahkan ke keranjang!')">Tambah ke Keranjang</button>
-      </div>
-
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1612817159949-195b6d5e4f1c?auto=format&fit=crop&w=800&q=80" alt="Toner Rosewater">
-        <h3>Toner Rosewater</h3>
-        <p>Menyegarkan kulit dan membantu mengontrol minyak berlebih.</p>
-        <div class="price">Rp 59.000</div>
-        <button class="btn" onclick="alert('Produk ditambahkan ke keranjang!')">Tambah ke Keranjang</button>
-      </div>
-
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1611930022073-b7d3b0aa0f63?auto=format&fit=crop&w=800&q=80" alt="Serum Vitamin C">
-        <h3>Serum Vitamin C</h3>
-        <p>Mencerahkan wajah dan melindungi dari radikal bebas.</p>
-        <div class="price">Rp 129.000</div>
-        <button class="btn" onclick="alert('Produk ditambahkan ke keranjang!')">Tambah ke Keranjang</button>
-      </div>
-
+    <div class="product-card">
+      <img src="Madu.jpg" alt="Masker Madu Organik AlamGlow">
+      <h3>Masker Madu Organik</h3>
+      <p>Menutrisi dan melembapkan kulit wajah secara alami.</p>
+      <div class="price">Rp 89.000</div>
+      <button class="btn" onclick="tambahKeranjang('Masker Madu Organik', 89000)">Tambah ke Keranjang</button>
     </div>
-  </div>
 
-  <footer>
-    <p>Ikuti kami di 
-      <a href="#">Instagram</a> | 
-      <a href="#">Shopee</a> | 
-      <a href="#">Tokopedia</a>
-    </p>
-    <p>© 2025 AlamGlow - All Rights Reserved</p>
-  </footer>
+    <div class="product-card">
+      <img src="Sabun.png" alt="Sabun Lidah Buaya AlamGlow">
+      <h3>Sabun Lidah Buaya</h3>
+      <p>Membersihkan kulit sekaligus menjaga kelembapan alami.</p>
+      <div class="price">Rp 49.000</div>
+      <button class="btn" onclick="tambahKeranjang('Sabun Lidah Buaya', 49000)">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Toner.png" alt="Toner Rosewater AlamGlow">
+      <h3>Toner Rosewater</h3>
+      <p>Menyegarkan kulit dan membantu mengontrol minyak berlebih.</p>
+      <div class="price">Rp 59.000</div>
+      <button class="btn" onclick="tambahKeranjang('Toner Rosewater', 59000)">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Serum.png" alt="Serum Vitamin C AlamGlow">
+      <h3>Serum Vitamin C</h3>
+      <p>Mencerahkan wajah dan melindungi dari radikal bebas.</p>
+      <div class="price">Rp 129.000</div>
+      <button class="btn" onclick="tambahKeranjang('Serum Vitamin C', 129000)">Tambah ke Keranjang</button>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 AlamGlow - All Rights Reserved</p>
+</footer>
+
+<!-- JSON-LD Structured Data (Product Collection) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Produk Skincare AlamGlow",
+  "itemListElement": [
+    {
+      "@type": "Product",
+      "name": "Masker Madu Organik",
+      "brand": "AlamGlow",
+      "description": "Masker wajah alami dari madu organik untuk melembapkan dan menutrisi kulit.",
+      "offers": {
+        "@type": "Offer",
+        "price": "89000",
+        "priceCurrency": "IDR",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Sabun Lidah Buaya",
+      "brand": "AlamGlow",
+      "description": "Sabun alami dengan ekstrak lidah buaya untuk membersihkan dan melembapkan kulit.",
+      "offers": {
+        "@type": "Offer",
+        "price": "49000",
+        "priceCurrency": "IDR",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Toner Rosewater",
+      "brand": "AlamGlow",
+      "description": "Toner alami dari air mawar untuk menyegarkan dan menyeimbangkan kulit.",
+      "offers": {
+        "@type": "Offer",
+        "price": "59000",
+        "priceCurrency": "IDR",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Serum Vitamin C",
+      "brand": "AlamGlow",
+      "description": "Serum vitamin C untuk mencerahkan kulit dan melindungi dari radikal bebas.",
+      "offers": {
+        "@type": "Offer",
+        "price": "129000",
+        "priceCurrency": "IDR",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function tambahKeranjang(nama, harga){
+  const cart = JSON.parse(localStorage.getItem("cartData")) || [];
+  const existing = cart.find(item => item.nama === nama);
+  if(existing){ existing.jumlah += 1; } 
+  else { cart.push({ nama, harga, jumlah: 1 }); }
+  localStorage.setItem("cartData", JSON.stringify(cart));
+  updateCartCount();
+  alert(`${nama} ditambahkan ke keranjang!`);
+}
+
+function updateCartCount(){
+  const cart = JSON.parse(localStorage.getItem("cartData")) || [];
+  const total = cart.reduce((sum, item) => sum + item.jumlah, 0);
+  document.getElementById("cart-count").textContent = total;
+}
+
+window.onload = updateCartCount;
+</script>
 
 </body>
 </html>
